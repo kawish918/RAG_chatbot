@@ -1,0 +1,4 @@
+Machine learning is a subset of artificial intelligence (AI) 
+that enables systems to learn from data and make decisions without explicit programming. 
+It can be categorized into three main types: supervised learning, unsupervised learning, 
+and reinforcement learning.
