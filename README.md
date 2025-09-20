@@ -23,7 +23,7 @@ A **Retrieval-Augmented Generation (RAG)** chatbot built with LangChain, Hugging
 ### 1. Clone the Repository
 
 ```bash
-git clone <your-repository-url>
+git clone https://github.com/kawish918/RAG_chatbot.git
 cd rag_chatbot
 ```
 
@@ -72,8 +72,6 @@ cp .env.example .env
 ```env
 GOOGLE_API_KEY=your_actual_api_key_here
 ```
-
-⚠️ **Important**: Never commit your `.env` file to version control. It's already included in `.gitignore`.
 
 ### 6. Run the Chatbot
 
@@ -141,7 +139,7 @@ loader = DirectoryLoader("./documents", glob="*.txt")
 documents = loader.load()
 ```
 
-## 🎯 Example Usage
+##  Example Usage
 
 ```
 🚀 Gemini 2.0 RAG Chatbot is ready! Ask a question about Machine Learning.
@@ -188,47 +186,16 @@ Error installing faiss-cpu
 ```
 - Solution: Use `pip install faiss-cpu` or `conda install faiss-cpu`
 
-## 🔒 Security Best Practices
-
-1. **Never commit API keys to version control**
-2. Use environment variables:
-   ```python
-   import os
-   from dotenv import load_dotenv
-   
-   load_dotenv()
-   os.environ["GOOGLE_API_KEY"] = os.getenv("GOOGLE_API_KEY")
-   ```
-3. Add `.env` to your `.gitignore` file
-
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
 
 ## 📄 License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-## 🙏 Acknowledgments
+##  Acknowledgments
 
 - [LangChain](https://langchain.com/) for the RAG framework
 - [HuggingFace](https://huggingface.co/) for embedding models
 - [Google AI](https://ai.google/) for Gemini 2.0 model
 - [FAISS](https://github.com/facebookresearch/faiss) for vector similarity search
 
-## 📞 Support
-
-If you encounter any issues or have questions:
-
-1. Check the [Troubleshooting](#-troubleshooting) section
-2. Open an issue in this repository
-3. Check the documentation for [LangChain](https://python.langchain.com/) and [Google AI](https://ai.google.dev/)
-
----
-
-**Happy Chatting! 🎉**
 
